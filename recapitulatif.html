@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Récapitulatif</title>
+</head>
+<style>
+    html,body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+    overflow-x: hidden;
+    }
+    #header{
+        background-color: aquamarine;
+        margin-top: -22px;
+        text-align: center;
+        
+    }
+    #piedpage {
+	
+	bottom: 0; left: 0;
+	width: 100%;
+    background-color: #ffffff;;
+    height: 85px;
+    border-top: #000000 solid 1px;
+    border-bottom: #ffffff;
+    position: fixed;
+}
+.btnplan {
+    
+    border: 0;
+    line-height: 4;
+    padding:26px 10px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin-left: 2px;
+    margin-top: 1px;
+    color: rgb(0, 0, 0);
+    /*text-shadow: 1px 1px 1px #000;*/
+    border-radius: 10px;
+    background-color:white ;
+    /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
+    /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
+    width: 30%;
+    background-image: url(https://api.iconify.design/system-uicons:document-words.svg?color=%23000000);
+    background-repeat: no-repeat;
+    background-position: 50% 13px;
+    background-size: 41px;
+    
+}
+
+.btninfo{
+    border: 0;
+    line-height: 4;
+    padding:26px 10px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin-left: 2px;
+    margin-top: 1px;
+    color:  rgb(49, 200, 147);
+    /*text-shadow: 1px 1px 1px #000;*/
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
+    /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
+    width: 30%;
+    background-image: url(https://api.iconify.design/system-uicons:document-list.svg?color=%234bb97b);
+    background-repeat: no-repeat;
+    background-position: 50% 15px;
+    background-size: 40px;
+    
+    
+}
+
+
+
+.btncollec{
+    border: 0;
+    line-height: 4;
+    padding:26px 10px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin-left: 2px;
+    margin-top: 1px;
+    color: rgb(0, 0, 0);
+    /*text-shadow: 1px 1px 1px #000;*/
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
+    /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
+    width: 30%;
+    background-image: url(https://api.iconify.design/typcn:pen.svg?color=%23000000);
+    background-repeat: no-repeat;
+    background-position: 50% 16px;
+    background-size: 35px;
+    
+    
+}
+
+
+</style>
+<body>
+    <header>
+        <div id="header">
+            <h1>Fiche récapitulative<br> Chateau d'eau N°20</h1>
+  
+
+        </div>
+    </header>
+
+    <table border="1" CELLPADDING="2" CELLSPACING="2" WIDTH="100%">
+  
+        <caption style="font-size: 30px; font-family: Georgia, 'Times New Roman', Times, serif;">Maintenance</caption>
+      
+      <tr style="background-color: aquamarine;"> <th>Dates</th> <th>Travaux effectués</th> </tr>
+
+      <tr> <td>..........</td> <td>.......................................</td> 
+        </tr>
+        <tr> <td>..........</td> <td>.......................................</td> 
+        </tr>
+      <tr> <td>14/10/2022</td> <td>texte maintenance.......................................</td> 
+        </tr>
+        <tr> <td>12/09/2022</td> <td>texte maintenance.......................................</td> 
+        </tr>
+        <tr> <td>05/01/2022</td> <td>texte maintenance.......................................</td> 
+        </tr>
+        
+      
+      </table>
+
+
+
+
+
+
+    <footer>
+        <div id="piedpage">
+            <a href="page_protegee.html"><button class="btnplan" type="button" style="cursor: pointer;margin-left: 10px;">Fiche<br> ressource</button></a>
+            <a href="recapitulatif.html"><button class="btninfo" type="button"style="cursor: pointer;">Maintenance</button></a>
+            <a href="saisie-mail.html"><button class="btncollec" type="button" style="cursor: pointer;">saisie Travail</button></a>
+           
+        </div>
+    </footer>
+</body>
+</html>

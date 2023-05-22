@@ -2,7 +2,7 @@ function checkPassword() {
     var password = document.getElementById("passwordInput").value;
   
     // Comparer le mot de passe entré avec les mots de passe appropriés pour chaque page
-    if (password === "gugu") {
+    if (password === "%ZJvh-l#QTB/r20") {
       window.location.href = "page_protegee.html";
       return false;
     } else if (password === "gugu81") {

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saisie du travail</title>
+</head>
+
+<style>
+
+body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+    }
+
+    textarea {
+      height: 150px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+    html,body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+    overflow-x: hidden;
+    }
+    #header{
+        background-color: aquamarine;
+        margin-top: -22px;
+        text-align: center;
+        
+    }
+    #piedpage {
+	
+	bottom: 0; left: 0;
+	width: 100%;
+    background-color: #ffffff;;
+    height: 85px;
+    border-top: #000000 solid 1px;
+    border-bottom: #ffffff;
+    position: fixed;
+}
+.btnplan {
+    
+    border: 0;
+    line-height: 4;
+    padding:26px 10px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin-left: 2px;
+    margin-top: 1px;
+    color: rgb(0, 0, 0);
+    /*text-shadow: 1px 1px 1px #000;*/
+    border-radius: 10px;
+    background-color:white ;
+    /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
+    /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
+    width: 30%;
+    background-image: url(https://api.iconify.design/system-uicons:document-words.svg?color=%23000000);
+    background-repeat: no-repeat;
+    background-position: 50% 13px;
+    background-size: 41px;
+    
+}
+
+.btninfo{
+    border: 0;
+    line-height: 4;
+    padding:26px 10px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin-left: 2px;
+    margin-top: 1px;
+    color:  rgb(0, 0, 0);
+    /*text-shadow: 1px 1px 1px #000;*/
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
+    /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
+    width: 30%;
+    background-image: url(https://api.iconify.design/system-uicons:document-list.svg?color=%23000000);
+    background-repeat: no-repeat;
+    background-position: 50% 15px;
+    background-size: 40px;
+    
+    
+}
+
+
+
+.btncollec{
+    border: 0;
+    line-height: 4;
+    padding:26px 10px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin-left: 2px;
+    margin-top: 1px;
+    color: rgb(49, 200, 147);
+    /*text-shadow: 1px 1px 1px #000;*/
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
+    /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
+    width: 30%;
+    background-image: url(https://api.iconify.design/typcn:pen.svg?color=%234bb97b);
+    background-repeat: no-repeat;
+    background-position: 50% 16px;
+    background-size: 35px;
+    
+    
+}
+
+
+</style>
+<body>
+    <header>
+        <div id="header">
+            <h1>Saisie du travail<br> Chateau d'eau N°20</h1>
+  
+
+        </div>
+    </header>
+
+    <div class="container">
+        
+    
+          <label for="recipients">Destinataires (séparés par des virgules):</label>
+          <input type="text" id="recipients" name="recipients" required>
+    
+          <label for="subject">Sujet:</label>
+          <input type="text" id="subject" name="subject" required>
+    
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+    
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    
+      <script>
+        document.getElementById("emailForm").addEventListener("submit", function(e) {
+          e.preventDefault(); // Empêche l'envoi du formulaire par défaut
+    
+          var sender = document.getElementById("sender").value;
+          var recipients = document.getElementById("recipients").value;
+          var subject = document.getElementById("subject").value;
+          var message = document.getElementById("message").value;
+    
+          var emailData = {
+            sender: sender,
+            recipients: recipients.split("code.nature81@gmail.com,quentin.gubin81@gmail.com"),
+            subject: subject,
+            message: message
+          };
+    
+          // Envoyer l'objet emailData à votre serveur pour l'envoi du courrier électronique
+    
+          // Afficher un message de confirmation
+          alert("Le courrier électronique a été envoyé avec succès.");
+          document.getElementById("emailForm").reset();
+        });
+
+        const nodemailer = require('nodemailer');
+
+// Configuration du transporteur SMTP
+const transporter = nodemailer.createTransport({
+  host: 'smtp.example.com', // Remplacez par l'hôte SMTP approprié
+  port: 587, // Remplacez par le port SMTP approprié
+  secure: false, // false si vous utilisez le port 587, true pour le port 465 (SSL)
+  auth: {
+    user: 'votre_adresse_email', // Remplacez par votre adresse e-mail
+    pass: 'votre_mot_de_passe' // Remplacez par votre mot de passe
+  }
+});
+
+// Fonction pour envoyer l'e-mail
+function sendEmail(sender, recipients, subject, message) {
+  const mailOptions = {
+    from: sender,
+    to: recipients.join(','),
+    subject: subject,
+    text: message
+  };
+
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.log('Erreur lors de l\'envoi du courrier électronique:', error);
+    } else {
+      console.log('Courrier électronique envoyé avec succès:', info.response);
+    }
+  });
+}
+
+// Exemple d'utilisation
+const sender = 'votre_adresse_email'; // Remplacez par votre adresse e-mail
+const recipients = ['code.nature81@gmail.com', 'quentin.gubin81@gmail.com']; // Remplacez par les adresses e-mail souhaitées
+const subject = 'Sujet de l\'email';
+const message = 'Contenu de l\'email';
+
+sendEmail(sender, recipients, subject, message);
+
+      </script>
+
+
+
+
+
+
+    <footer>
+        <div id="piedpage">
+            <a href="page_protegee.html"><button class="btnplan" type="button" style="cursor: pointer;margin-left: 10px;">Fiche<br> ressource</button></a>
+            <a href="recapitulatif.html"><button class="btninfo" type="button"style="cursor: pointer;">Maintenance</button></a>
+            <a href="saisie-mail.html"><button class="btncollec" type="button" style="cursor: pointer;">saisie Travail</button></a>
+           
+        </div>
+    </footer>
+</body>
+</html>
