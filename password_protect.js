@@ -3,7 +3,7 @@ function checkPassword() {
   
     // Comparer le mot de passe entré avec les mots de passe appropriés pour chaque page
     if (password === "Farguettes@81#/R18") {
-      window.location.href = "saisie-mail.html";
+      window.location.href = "materiel-proctec.html";
       return false;
     } else if (password === "gugu81") {
       window.location.href = "page_protegee2.html";
