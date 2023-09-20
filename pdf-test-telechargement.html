@@ -13,6 +13,21 @@
 	height: 100vh;
     overflow-x: hidden;
     }
+
+    .pdf-container {
+            position: relative;
+            width: 100%;
+            height: 25vh;
+            padding-bottom: 110%; /* Ratio de l'élément, par exemple 4:3 (3/4 = 75%) */
+        }
+        .pdf-object {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+           
+        }
     #header{
         background-color: aquamarine;
         margin-top: -22px;
@@ -152,8 +167,11 @@
     <img style="width: 100%;height: 70%; text-align: center;" src="SCHEMA LES FARGUETTES_page-0032.jpg">
     <img style="width: 100%;height: 70%; text-align: center;" src="SCHEMA LES FARGUETTES_page-0033.jpg">
     <img style="width: 100%;height: 70%; text-align: center;" src="SCHEMA LES FARGUETTES_page-0034.jpg">
-    <img style="width: 100%;height: 70%; text-align: center;" src="SCHEMA LES FARGUETTES_page-0035.jpg"><br><br><br><br><br><br><br><br><br><br>
-
+    <img style="width: 100%;height: 70%; text-align: center;" src="SCHEMA LES FARGUETTES_page-0035.jpg"><br>
+    <div class="pdf-container">
+        <embed class="pdf-object" src="SCHEMA LES FARGUETTES.pdf" type="application/pdf" />
+        <!-- ou <iframe class="pdf-object" src="votre-fichier.pdf"></iframe> -->
+    </div><br><br><br><br><br><br>
 
 
 
