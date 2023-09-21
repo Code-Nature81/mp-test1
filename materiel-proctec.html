@@ -35,6 +35,12 @@
         #validationButton:hover {
           background-color: #45a049;
         }
+
+        .conteneur{
+            width: 300px;
+            height: 300px;
+            text-align: center;
+          }
       </style>
     
     <body>
@@ -45,8 +51,10 @@
         <li>Mettez des gants pour éviter tout risque de blessure.</li>
       </ol>
       <p>En cliquant sur le bouton ci-dessous, vous confirmez avoir lu et compris les consignes de sécurité.</p>
-      <a href="saisie-mail.html"><button id="validationButton" onclick="validate()">J'ai bien lu</button></a>
-    
+      <a href="../farguette-R18/Mail-Accueil/saisie-mail.html"><button id="validationButton" onclick="validate()">J'ai bien lu</button></a><br><br><br><br><br>
+      <div class=conteneur>
+        <img  src="https://www.poledeseaux.fr/sites/poledeseaux.fr/www.poledeseaux.fr/themes/poledeseaux/logo.svg"/>
+      </div>
       <script>
         function validate() {
           alert("Merci d'avoir confirmé que vous avez bien lu les consignes de sécurité !");
